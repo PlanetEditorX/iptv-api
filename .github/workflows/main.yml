@@ -37,6 +37,9 @@ jobs:
         run: pip3 install --user pipenv
       - name: Install dependecies
         run: pipenv --python 3.14 && pipenv install --deploy
+      - name: Convert txiptv aggregator source
+        run: pipenv run python scripts/convert_txiptv.py
+        continue-on-error: true
       - name: Update
         run: pipenv run dev
       - name: Commit and push if changed
