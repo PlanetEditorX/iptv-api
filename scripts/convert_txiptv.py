@@ -24,7 +24,7 @@ import requests
 
 DEFAULT_API_URLS = [
     "https://iptvs.pes.im",
-    "https://iptvs-speed.humorously.cn",
+    # "https://iptvs-speed.humorously.cn",
 ]
 DEFAULT_OUTPUT = Path(__file__).resolve().parent.parent / "config" / "local" / "txiptv.txt"
 PLAYLIST_PATH = "/iptv/live/1000.json"
